@@ -30,8 +30,8 @@ class Directory extends React.Component{
       return( <div className="directory-component">
           <p>this is directory</p>
           {
-              this.state.categories.map(category =>(
-                  <Menu/>
+              this.state.categories.map(({name}) =>(
+                  <Menu nameofcategories={name}/>
               ))
           }
       </div>)
